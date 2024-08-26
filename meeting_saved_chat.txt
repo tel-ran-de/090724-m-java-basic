@@ -1,0 +1,176 @@
+09:21:08 From Valeriia Kravchuk to Everyone:
+	Доброе утро всем
+09:25:37 From Yevhen Kariev to Everyone:
+	Morgen
+09:28:55 From DeyanSpasov to Everyone:
+	Guten Morgen an alle!
+09:29:19 From Vladimir Gubarev to Everyone:
+	Morgen
+09:29:32 From Artur Gabdrakipov to Everyone:
+	Доброе утро!
+10:16:54 From Starta Institute 36 to Everyone:
+	https://github.com/Jekahome/Read_books/blob/main/%D0%A7%D0%B8%D1%81%D1%82%D1%8B%D0%B9_%D0%BA%D0%BE%D0%B4_%D0%A0%D0%BE%D0%B1%D0%B5%D1%80%D1%82_%D0%9C%D0%B0%D1%80%D1%82%D0%B8%D0%BD.md
+10:22:54 From Starta Institute 36 to Everyone:
+	Создайте новый простой проект compilation-java
+	Создайте класс TestCompilation.java
+	Создайте метод main
+	Добавьте инструкцию System.out.println(“Compilation was successful”)
+	Откройте терминал в папке где вы создали класс из п. 1
+	Скомпилируйте код - введите команду: javac TestCompilation.java
+	Запустите java-программу командой: java TestCompilation
+10:27:08 From Oleksii Bielykh to Everyone:
+	+
+11:19:24 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	        Dog dog = new Dog();
+	//        dog.age = -10;
+	//        System.out.println(dog.age);
+	    }
+11:19:30 From Starta Institute 36 to Everyone:
+	public class Dog {
+	    private String name;
+	    private int age;
+	//    default constructor
+	//    public Dog() {}
+	}
+11:28:14 From Starta Institute 36 to Everyone:
+	public class Dog {
+	    private String name;
+	    private int age;
+	//    default constructor
+	    public Dog() {}
+	    public Dog(String dogName, int dogAge) {
+	        name = dogName;
+	        age = dogAge;
+	    }
+	    public Dog(String dogName) {
+	        name = dogName;
+	    }
+	    public Dog(int dogAge) {
+	        age = dogAge;
+	    }
+	}
+11:40:05 From Starta Institute 36 to Everyone:
+	Dog dog = new Dog();
+	System.out.println("Name - " + dog.getName() + ", age - " + dog.getAge());
+	Dog spike = new Dog("Spike", 5);
+	System.out.println("Name - " + spike.getName() + ", age - " + spike.getAge());
+	Dog tike = new Dog("Tike");
+	System.out.println("Name - " + tike.getName() + ", age - " + tike.getAge());
+	Dog ageDog = new Dog(10);
+	System.out.println("Name - " + ageDog.getName() + ", age - " + ageDog.getAge());
+11:43:13 From Starta Institute 36 to Everyone:
+	public class Dog {
+	    private String name;
+	    private int age;
+	//    default constructor
+	    public Dog() {}
+	//    full params constructor
+	    public Dog(String dogName, int dogAge) {
+	        name = dogName;
+	        age = dogAge;
+	    }
+	    public Dog(String dogName) {
+	        name = dogName;
+	    }
+	    public Dog(int dogAge) {
+	        age = dogAge;
+	    }
+	    public String getName() {
+	        return name;
+	    }
+	    public int getAge() {
+	        return age;
+	    }
+	}
+11:50:54 From Starta Institute 36 to Everyone:
+	public class Dog {
+	    private String name;
+	    private int age;
+	//    default constructor
+	    public Dog() {}
+	//    full params constructor
+	    public Dog(String name, int age) {
+	        this.name = name;
+	        this.age = age;
+	    }
+	    public Dog(String name) {
+	        this.name = name;
+	    }
+	    public Dog(int age) {
+	        this.age = age;
+	    }
+	    public String getName() {
+	        return name;
+	    }
+	    public int getAge() {
+	        return age;
+	    }
+	    public void setName(String name) {
+	        this.name = name;
+	    }
+	    public void setAge(int age) {
+	        this.age = age;
+	    }
+	}
+12:05:19 From Starta Institute 36 to Everyone:
+	public class Dog {
+	    private String name;
+	    private int age;
+	//    default constructor
+	    public Dog() {}
+	//    full params constructor
+	    public Dog(String name, int age) {
+	        this.name = name;
+	        if (age >= 0 && age < 16) {
+	            this.age = age;
+	        } else {
+	            System.out.println("Current age doesn't support");
+	        }
+	    }
+	    public Dog(String name) {
+	        this.name = name;
+	    }
+	    public Dog(int age) {
+	        if (age >= 0 && age < 16) {
+	            this.age = age;
+	        } else {
+	            System.out.println("Current age doesn't support");
+	        }
+	    }
+	    public String getName() {
+	        return name;
+	    }
+	    public int getAge() {
+	        return age;
+	    }
+	    public void setName(String name) {
+	        this.name = name;
+	    }
+	    public void setAge(int age) {
+	        if (age >= 0 && age < 16) {
+	            this.age = age;
+	        } else {
+	            System.out.println("Current age doesn't support");
+	        }
+	    }
+	}
+12:08:03 From Starta Institute 36 to Everyone:
+	public void setAge(int age) throws Exception {
+	        if (age >= 0 && age < 16) {
+	            this.age = age;
+	        } else {
+	//            System.out.println("Current age doesn't support");
+	            throw new Exception("Current age doesn't support");
+	        }
+	    }
+12:28:39 From Starta Institute 36 to Everyone:
+	Создайте класс Кот
+	Создайте конструктор по умолчанию
+	Создайте класс Тест
+	Создайте экземпляр класса Кот
+	Добавьте в класс Кот два конструктора с параметрами
+	Удалите конструктор по умолчанию
+	Удалите this из конструктора, переименуйте параметры
+12:48:13 From Artur Gabdrakipov to Everyone:
+	Спасибо
