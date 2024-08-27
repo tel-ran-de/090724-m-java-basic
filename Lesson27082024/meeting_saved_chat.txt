@@ -1,0 +1,170 @@
+09:22:57 From Yevhen Kariev to Everyone:
+	Morgen
+09:27:44 From DeyanSpasov to Everyone:
+	Guten Morgen an alle!
+09:30:31 From Artur Gabdrakipov to Everyone:
+	Доброе утро!
+09:30:51 From Valeriia Kravchuk to Everyone:
+	Доброе утро
+09:31:17 From Oksana Bibikova to Everyone:
+	Доброе утро!👋
+09:31:31 From Nikita Shevchenko to Everyone:
+	Доброе утро
+09:45:31 From Starta Institute 36 to Everyone:
+	System.out.println(Integer.toBinaryString(10));
+	System.out.println(Integer.toString(10, 16));
+	System.out.println(Long.toString(10, 2));
+10:02:27 From Starta Institute 36 to Everyone:
+	System.out.println(Long.toString(0101101, 10));
+	System.out.println(Long.toString(0x123, 2));
+10:03:02 From Starta Institute 36 to Everyone:
+	Создайте класс Converter - конвертер системы счисления. 
+	У пользователя спрашивается число системы счисления, (используйте Scanner)
+	Запрашивается само число (ожидается корректный ввод)
+	У пользователя спрашивается число системы счисления в какую перевести
+	Конвертация должна быть с помощью класса обертки Long.
+10:11:46 From Oksana Bibikova to Everyone:
+	public static void main(String[] args) {	    Scanner scanner = new Scanner(System.in);	    System.out.println("Enter the integer number");	    int number = scanner.nextInt();	    System.out.println("What numbering system to use?");	    int numSystem = scanner.nextInt();	    System.out.println(Integer.toString(number, numSystem));	}
+10:31:36 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	        String str = "Java";
+	        printString(str);
+	//        1
+	        int result = addInt(2, 5);
+	        System.out.println("1. Result is " + result);
+	//        2
+	        System.out.println("2. Result is " + addInt(2, 5));
+	    }
+	    public static void printString(String str) {
+	        System.out.println("You entered: " + str);
+	    }
+	    public static int addInt(int numOne, int numTwo) {
+	        return numOne + numTwo;
+	    }
+10:31:43 From Yevhen Kariev to Everyone:
+	+
+10:31:51 From Nikita Shevchenko to Everyone:
+	+
+10:42:17 From DeyanSpasov to Everyone:
+	ИЗВИНЯЮС всем!
+10:47:18 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	        String str = "Java";
+	        printString(str);
+	//        1
+	        int result = addInt(2, 5);
+	        System.out.println("1. Result is " + result);
+	//        2
+	        System.out.println("2. Result is " + addInt(2, 5));
+	        System.out.println(divInt(10, 0));
+	    }
+	    public static void printString(String str) {
+	        System.out.println("You entered: " + str);
+	    }
+	    public static int addInt(int numOne, int numTwo) {
+	        return numOne + numTwo;
+	    }
+	    public static int divInt(int numOne, int numTwo) {
+	        return numOne / numTwo;
+	    }
+10:48:11 From Starta Institute 36 to Everyone:
+	Создайте метод getSum(int a, int b), который ничего не возвращает, и печатает результат суммы двух полученных чисел в консоль.
+	
+	Создайте метод getReturnSum(int a, int b), который возвращает результат - сумма двух чисел, а печать в консоль производит вызывающий метод.
+10:52:52 From Oksana Bibikova to Everyone:
+	+
+10:54:24 From Jura Buhir to Everyone:
+	понял
+11:17:28 From Karina Myroshnychenko to Everyone:
+	+
+11:17:30 From Nikita Shevchenko to Everyone:
+	+
+11:36:57 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	//        1
+	        System.out.println((int)(Math.random() * 1000));
+	//        2
+	        Random rand = new Random();
+	        System.out.println(rand.nextInt());
+	        System.out.println(rand.nextInt(1000));
+	    }
+11:49:32 From Yevhen Kariev to Everyone:
+	System.out.println("Random 2: " + (random.nextInt(1000 - 10 + 1) + 10));
+11:49:33 From Yevhen Kariev to Everyone:
+	Генерация числа в диапазоне от 10 до 1009:
+11:57:01 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	//        1
+	        System.out.println((int)(Math.random() * 10) + 10);
+	//        (int) (Math.random() * (max - min + 1)) + min
+	        int min = 50;
+	        int max = 100;
+	        System.out.println((int) (Math.random() * (max - min + 1)) + min);
+	//        2
+	//        Random rand = new Random();
+	//        System.out.println(rand.nextInt());
+	//        System.out.println(rand.nextInt(10) + 10);
+	    }
+11:57:39 From Starta Institute 36 to Everyone:
+	Импортировать класс java.util.Random
+	Создать экземпляр класса Random (Random rand = new Random())
+	Вызовите один из следующих методов объекта rand:
+	nextInt(upperbound) генерирует случайные числа в диапазоне от 0 до upper bound -1.
+	nextFloat() генерирует число с плавающей запятой от 0,0 до 1,0.
+	nextDouble() генерирует двойное число между 0.0 и 1.0.
+12:14:04 From OleksiiBielykh to Everyone:
+	Replying to "Снимок экрана 2024-08-27 в 12.10.07.png"
+	
+	а скинь результат пожалуйста
+12:16:02 From OleksiiBielykh to Everyone:
+	Reacted to "Снимок экрана 2024-08-27 в 12.14.24.png" with 👍
+12:19:40 From Starta Institute 36 to Everyone:
+	Использование Math.random 
+	Объявить минимальное значение диапазона
+	Объявить максимальное значение диапазона
+	Используйте формулу Math.random()*(max-min+1)+min для создания значений, включающих значение min и max
+12:31:49 From Starta Institute 36 to Everyone:
+	Написать метод, который формирует случайное целое число. В методе main создать 5 переменных и присвоить им рандомные значения используя написаную ранее функцию.
+	Создать метод который просит пользователя ввести целое число. В методе main создать 5 переменных и присвоить им значения, которые вводит пользователь.
+	Вывести все значения на экран.
+12:47:11 From Jura Buhir to Everyone:
+	public class Test {
+	    public static void main(String[] args) {
+	        int randomValue1 = rndNumber(1, 100);
+	        int randomValue2 = rndNumber(1, 100);
+	        int randomValue3 = rndNumber(1, 100);
+	        int randomValue4 = rndNumber(1, 100);
+	        int randomValue5 = rndNumber(1, 100);
+	        System.out.println("Случайные значения:");
+	        System.out.println("randomValue1 = " + randomValue1);
+	        System.out.println("randomValue2 = " + randomValue2);
+	        System.out.println("randomValue3 = " + randomValue3);
+	        System.out.println("randomValue4 = " + randomValue4);
+	        System.out.println("randomValue5 = " + randomValue5);
+12:47:13 From Jura Buhir to Everyone:
+	int userValue1 = getUserInput();
+	        int userValue2 = getUserInput();
+	        int userValue3 = getUserInput();
+	        int userValue4 = getUserInput();
+	        int userValue5 = getUserInput();
+	        System.out.println("Значения, введенные пользователем:");
+	        System.out.println("userValue1 = " + userValue1);
+	        System.out.println("userValue2 = " + userValue2);
+	        System.out.println("userValue3 = " + userValue3);
+	        System.out.println("userValue4 = " + userValue4);
+	        System.out.println("userValue5 = " + userValue5);
+	    }
+	    public static int rndNumber(int min, int max) {
+	        Random r = new Random();
+	        return min + r.nextInt(max - min + 1);
+	    }
+	    public static int getUserInput() {
+	        Scanner scanner = new Scanner(System.in);
+	        System.out.print("Введите целое число: ");
+	        return scanner.nextInt();
+	    }
+	}
+12:51:59 From Artur Gabdrakipov to Everyone:
+	Спасибо!
+12:52:12 From Valeriia Kravchuk to Everyone:
+	спасибо
