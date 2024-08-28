@@ -1,0 +1,77 @@
+09:28:46 From Yevhen Kariev to Everyone:
+	Morgen!
+09:29:01 From Jura Buhir to Everyone:
+	Grüß
+10:52:13 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    int numIntOne = 5;
+	    int numIntTwo = 10;
+	    double numDoubleOne = 5.5;
+	    double numDoubleTwo = 4.5;
+	    int resultInt = sum(numIntOne, numIntTwo);
+	    System.out.println(resultInt);
+	    System.out.println(sum(numDoubleOne, numDoubleTwo));
+	}
+	public static int sum(int numOne, int numTwo) {
+	    return numOne + numTwo;
+	}
+	public static double sum(double numOne, double numTwo) {
+	    return numOne + numTwo;
+	}
+11:25:43 From Starta Institute 36 to Everyone:
+	public static void findEvenOdd(int num)  {  
+	if (num/2 == 0) {  
+	System.out.println(num+" is even"); }  
+	else  { 
+	System.out.println(num+" is odd");  }
+	}  
+	public static void main (String[] args)  {  
+	findEvenOdd(2);
+	findEvenOdd(4); 
+	findEvenOdd(5);    
+	}
+11:34:28 From OleksiiBielykh to Everyone:
+	Replying to "{B7F98B20-5CF9-4F56-A08E-C8D074818BFE}.png"
+	
+	а у меня всё одд ))
+11:34:37 From Nikita Shevchenko to Everyone:
+	Replying to "{B7F98B20-5CF9-4F56-A08E-C8D074818BFE}.png"
+	
+	Ну я уже всё исправил)
+11:34:53 From OleksiiBielykh to Everyone:
+	Replying to "{B7F98B20-5CF9-4F56-A08E-C8D074818BFE}.png"
+	
+	ну, я и не сомневался 👍
+11:35:22 From OleksiiBielykh to Everyone:
+	Replying to "{B7F98B20-5CF9-4F56-A08E-C8D074818BFE}.png"
+	
+	о, я понял )
+11:35:28 From OleksiiBielykh to Everyone:
+	Replying to "{B7F98B20-5CF9-4F56-A08E-C8D074818BFE}.png"
+	
+	😅
+11:35:38 From Nikita Shevchenko to Everyone:
+	Reacted to "{B7F98B20-5CF9-4F56-A08E-C8D074818BFE}.png" with 👍
+11:35:42 From Nikita Shevchenko to Everyone:
+	Reacted to "{D95A0EEB-26AB-4E7E-B2DA-C6A8D9658DDC}.png" with 👍
+11:37:06 From Nikita Shevchenko to Everyone:
+	Removed a 👍 reaction from "Nikita Shevchenko ha..."
+11:44:12 From Starta Institute 36 to Everyone:
+	Напишите метод, который принимает на вход количество студентов и “рандомально” выбирает любого студента начиная со второго включительно.
+	Например: в зуум сейчас присутствуют 10 участников. Первый участник - это преподаватель. Выбор должен быть сделан из 9 последующих, т.е. число выбирается из диапазона 2-10.
+12:13:42 From Mirahmad Mammadov to Everyone:
+	public static void main(String[]args){	    int students = 10;	  //  getStudent(students);	    System.out.println(getStudent(students));			}	public static int getStudent(int students){	    Random rand = new Random();	     return rand.nextInt(2,students + 1);		}
+12:24:30 From Starta Institute 36 to Everyone:
+	Напишите класс Converter для конвертации из градусов по Цельсию в Кельвины​, ​Фаренгейты:
+	У класса должны быть методы для конвертации.
+	Реализуйте два метода в классе:
+	runKelvinConverter(double baseValue)
+	runFahrenheitConverter(double baseValue)
+12:42:39 From Nikita Shevchenko to Everyone:
+	package myPackage;	public class Converter {	    private double baseValue;		    public Converter(double baseValue){	        this.baseValue = baseValue;	    }		    public double runKelvinconverter(){	        return baseValue + 273.15;	    }		    public double runFahrenheitConverter(){	        return baseValue * 1.8 + 32;	    }	}
+12:42:51 From Nikita Shevchenko to Everyone:
+	import myPackage.Converter;	public class Main {	    public static void main (String [] args){	        Converter num = new Converter(10);	        System.out.println("Температура в кельвинах: " + num.runKelvinconverter());	        System.out.println("Температура в фаренгейтах: " + num.runFahrenheitConverter());	    }			}
+12:46:20 From Artur Gabdrakipov to Everyone:
+	спасибо!
+12:47:07 From Starta Institute 36 to Everyone:
+	https://github.com/tel-ran-de/090724-m-java-basic/tree/main/Base
