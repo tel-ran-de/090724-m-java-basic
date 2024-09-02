@@ -1,0 +1,172 @@
+09:17:14 From DeyanSpasov to Everyone:
+	Guten Morgen an alle!
+09:21:16 From Yevhen Kariev to Everyone:
+	Morgen
+09:47:40 From Starta Institute 36 to Everyone:
+	//          if
+	//        not boolean values
+	//        if (num < 10) {
+	//            System.out.println("In the if body");
+	//            System.out.println("num == 10");
+	//        }
+	//        boolean value
+	//        if(isOpen) {
+	//            System.out.println("Shop is open");
+	//        }
+09:48:03 From Starta Institute 36 to Everyone:
+	Создайте и инициализируйте переменную int = 10
+	В блоке if сравните созданную переменную со значением 15
+	После блока добавьте инструкцию System.out.println("I am Not in if");
+	Проанализируйте вывод
+10:06:15 From Starta Institute 36 to Everyone:
+	int num = 10;
+	        boolean isOpen = true;
+	//      if-else
+	        boolean isCanBuy = false;
+	        if(isOpen && isCanBuy) {
+	            System.out.println("Buy something");
+	        } else {
+	            System.out.println("Can't buy");
+	        }
+10:15:21 From Starta Institute 36 to Everyone:
+	int currentTime = 10;
+	int timeStart = 9;
+	int timeEnd = 17;
+	boolean isOpen;// = false
+	if (currentTime >= timeStart && currentTime <= timeEnd) {
+	    isOpen = true;
+	} else {
+	    isOpen = false;
+	}
+10:18:23 From Starta Institute 36 to Everyone:
+	boolean isCanBuy;
+	int operationTimeStart = 10;
+	int operationTimeEnd = 16;
+	if (currentTime >= operationTimeStart && currentTime <= operationTimeEnd) {
+	    isCanBuy = true;
+	} else {
+	    isCanBuy = false;
+	}
+10:18:54 From Starta Institute 36 to Everyone:
+	Создайте и инициализируйте переменную int i = 10
+	В блоке if сравните созданную переменную со значением 15
+	Внутри блока добавьте инструкцию System.out.println("i is smaller than 15");
+	В  блоке else добавьте инструкцию System.out.println("i is greater than 15");
+	Проанализируйте вывод
+10:23:48 From Mirahmad Mammadov to Everyone:
+	int a =10;	if(a>15){	    System.out.println("a > b");	}else{	    System.out.println("a < b");
+10:37:17 From Starta Institute 36 to Everyone:
+	//        nested if
+	        boolean isOpen = true;
+	        boolean isCanBuy = false;
+	        boolean isIPhoneMax = true;
+	        if(isOpen) {
+	            System.out.println("Shop is open and you can buy");
+	            if(isCanBuy) {
+	                if (isIPhoneMax) {
+	                    System.out.println("We can buy IPhoneMax");
+	                } else {
+	                    System.out.println("We can't buy IPhoneMax");
+	                }
+	            } else {
+	                System.out.println("We can't buy");
+	            }
+	        } else {
+	            System.out.println("Shop is close");
+	        }
+10:51:37 From Starta Institute 36 to Everyone:
+	Создайте и инициализируйте переменную int i 
+	В блоке if сравните созданную переменную i со значением 10 (!=)
+	Внутри блока добавьте блок if и сравните переменную со значением 15 , внутри блока добавить инструкцию System.out.println("i is smaller than 15");
+	Добавите еще один блок if-else и сравните переменную со значением 12 
+	В блоке if добавить инструкцию System.out.println("i is smaller than 12 too")
+	В  блоке else добавьте инструкцию System.out.println("i is greater than 12");
+	Проанализируйте вывод
+10:57:06 From OleksiiBielykh to Everyone:
+	что-то не то
+10:59:35 From Mirahmad Mammadov to Everyone:
+	int num = 15;	if (num !=10){	    System.out.println(".");	}	if(num>= 15){	    System.out.println("num < 15");	}else{	    System.out.println("num >12");	}
+11:37:16 From Starta Institute 36 to Everyone:
+	//        if-else-if ladder
+	        int a1 = -1;
+	        int b1 = 1;
+	        int a2 = 2;
+	        int b2 = 10;
+	        int point = -1;
+	        if (point >= a1 && point <= b1) {
+	            System.out.println("First line");
+	        } else if (point >= a2 && point <= b2) {
+	            System.out.println("Second line");
+	        } else {
+	            System.out.println("Not in first nor second");
+	        }
+	//  if
+	        if (point >= a1 && point <= b1) {
+	            System.out.println("First line");
+	        }
+	        if (point >= a2 && point <= b2) {
+	            System.out.println("Second line");
+	        }
+	        if (!((point >= a1 && point <= b1) || (point >= a2 && point <= b2)))
+	        {
+	            System.out.println("Not in first nor second");
+	        }
+11:44:26 From Starta Institute 36 to Everyone:
+	Создайте и инициализируйте переменную int i = 20
+	В блоке if сравните созданную переменную со значением 10 (==)
+	В блоке if добавить инструкцию System.out.println("i is 10")
+	Добавьте блок else if и сравните переменную со значением 15 (==) , внутри блока добавить инструкцию System.out.println("i is 15");
+	Добавите еще один блок else if и сравните переменную со значением 20 (==) 
+	Добавьте блок else добавьте инструкцию System.out.println("i is not present");
+	Проанализируйте вывод
+11:55:05 From Mirahmad Mammadov to Everyone:
+	int s = 20;	if(20==10){	    System.out.println("answer:10");	}	 else if (s == 15) {	    System.out.println("answer:15");		} else if (s==20) {	    System.out.println("answer:20");	    	}else{	    System.out.println("answer:x");	}
+12:10:08 From Artur Gabdrakipov to Everyone:
+	отправите сюда последний код
+12:10:23 From Starta Institute 36 to Everyone:
+	int balance = 100;
+	int withdraw = 200;
+	if (balance > 0 && balance < 200) {
+	    System.out.println("Balance is OK");
+	    return;
+	}
+	if (withdraw <= balance) {
+	    System.out.println("Withdraw");
+	} else {
+	    System.out.println("Not enough money");
+	}
+12:10:31 From Artur Gabdrakipov to Everyone:
+	спасибо!
+12:13:00 From Starta Institute 36 to Everyone:
+	Создайте и инициализируйте переменную boolean t = true;
+	Добавьте инструкцию System.out.println("Before the return instruction");
+	В блоке if определите оператор return
+	Добавьте инструкцию после блока if System.out.println("This won't execute");
+	Запустите код
+	Проанализируйте вывод используя режим дебаггера
+	Переопределите переменную t = false
+	Проанализируйте вывод используя режим дебаггера
+12:18:43 From Mirahmad Mammadov to Everyone:
+	boolean t = true;	System.out.println("before");	if(t){	    return;	}	System.out.println("this wont execute");
+12:20:28 From Starta Institute 36 to Everyone:
+	Создать программу, проверяющую и сообщающую на экран, является ли целое число записанное в переменную n, чётным либо нечётным.
+12:26:13 From Mirahmad Mammadov to Everyone:
+	Scanner scan = new Scanner(System.in);	System.out.println("add number");	int numb = scan.nextInt();	if(numb % 2 ==0){	    System.out.println("even numb");		}else {	    System.out.println("odd number ");	}
+12:27:25 From Starta Institute 36 to Everyone:
+	Создать программу, которая будет проверять попало ли случайно выбранное из отрезка [5;155] целое число в интервал (25;100) и сообщать результат на экран.
+12:31:56 From Jura Buhir to Everyone:
+	Replying to "{88601CD4-6FEC-4F37-8E19-10856DD9383D}.png"
+	
+	Хотел как раз спросить, включая 25 и 100 или нет)
+12:32:17 From Yevhen Kariev to Everyone:
+	Replying to "{88601CD4-6FEC-4F37-8E19-10856DD9383D}.png"
+	
+	keine Ahnung ))
+12:32:21 From Jura Buhir to Everyone:
+	Reacted to "keine Ahnung ))" with 😃
+12:34:17 From Mirahmad Mammadov to Everyone:
+	Random rand = new Random();	int numb = rand.nextInt(5,155);	if( numb >25 && numb< 100){	    System.out.println("+");	}else {	    System.out.println("-");	}
+12:37:06 From Jura Buhir to Everyone:
+	Типо вот такого ?
+12:49:53 From Artur Gabdrakipov to Everyone:
+	Спасибо!
