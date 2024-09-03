@@ -1,0 +1,252 @@
+09:19:59 From DeyanSpasov to Everyone:
+	Guten Morgen an alle!
+09:20:42 From Valeriia Kravchuk to Everyone:
+	Доброе утро всем
+09:23:41 From Yevhen Kariev to Everyone:
+	Morgen!
+09:41:04 From Starta Institute 36 to Everyone:
+	int colorNum = 1;
+	switch (colorNum) {
+	    case 1:
+	        System.out.println("Red");
+	        break;
+	    case 2:
+	        System.out.println("Yellow");
+	        break;
+	    case 3:
+	        System.out.println("Green");
+	        break;
+	    default:
+	        System.out.println("Unsupported value");
+	}
+10:22:45 From Starta Institute 36 to Everyone:
+	public class EnumTest {
+	    private Day day;
+	    public EnumTest(Day day) {
+	        this.day = day;
+	    }
+	    public void tellItLikeItIs() {
+	        switch (day) {
+	            case MONDAY:
+	                System.out.println("Mondays are bad.");
+	                break;
+	            case FRIDAY:
+	                System.out.println("Fridays are better.");
+	                break;
+	            case SATURDAY: case SUNDAY:
+	                System.out.println("Weekends are best.");
+	                break;
+	            default:
+	                System.out.println("Midweek days are so-so.");
+	                break;
+	        }
+	    }
+10:22:47 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	        EnumTest firstDay = new EnumTest(Day.MONDAY);
+	        firstDay.tellItLikeItIs();
+	        EnumTest thirdDay = new EnumTest(Day.WEDNESDAY);
+	        thirdDay.tellItLikeItIs();
+	        EnumTest fifthDay = new EnumTest(Day.FRIDAY);
+	        fifthDay.tellItLikeItIs();
+	        EnumTest sixthDay = new EnumTest(Day.SATURDAY);
+	        sixthDay.tellItLikeItIs();
+	        EnumTest seventhDay = new EnumTest(Day.SUNDAY);
+	        seventhDay.tellItLikeItIs();
+	    }
+	}
+10:22:56 From Starta Institute 36 to Everyone:
+	public enum Day {
+	    SUNDAY,
+	    MONDAY,
+	    TUESDAY,
+	    WEDNESDAY,
+	    THURSDAY,
+	    FRIDAY,
+	    SATURDAY
+	}
+10:27:10 From Starta Institute 36 to Everyone:
+	https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+10:42:57 From Starta Institute 36 to Everyone:
+	Создайте switch-блок с днями недели
+	Создайте переменные int day; String dayString;
+	В каждом кейсе инициализируйте переменную dayString правильным значением.
+	Запустите программу, передав в switch-условие день 2.
+	В case №4 удалите break;
+	Запустите программу
+	Проанализируйте вывод
+10:55:29 From Starta Institute 36 to Everyone:
+	thursday
+11:16:42 From Starta Institute 36 to Everyone:
+	Пользователь вводит число-день недели и нужно отобразить выходные или рабочий день
+11:29:21 From Starta Institute 36 to Everyone:
+	По номеру месяца вывести время года
+11:34:23 From OleksiiBielykh to Everyone:
+	Winter is coming! 😅
+11:34:34 From Jura Buhir to Everyone:
+	Reacted to "Winter is coming! 😅" with 😂
+11:34:43 From Karina Myroshnychenko to Everyone:
+	Reacted to "Winter is coming! 😅" with 😂
+11:36:07 From Starta Institute 36 to Everyone:
+	В переменной min лежит число от 0 до 59. Определите в какую четверть часа попадает это число (в первую, вторую, третью или четвертую)
+11:47:32 From OleksiiBielykh to Everyone:
+	чего у меня матюкается на сканер?
+11:49:18 From Jura Buhir to Everyone:
+	public class Main {
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        int numb = scanner.nextInt();
+	        String quarter;
+	        switch (numb / 15) {
+	            case 0:
+	                quarter = "первая четверть";
+	                break;
+	            case 1:
+	                quarter = "вторая четверть";
+	                break;
+	            case 2:
+	                quarter = "третья четверть";
+	                break;
+	            case 3:
+	                quarter = "четвертая четверть";
+	                break;
+	            default:
+	                quarter = "не правильно!";
+	                break;
+	        }
+	        System.out.println("Число " + numb + " попадает в " + quarter + " часа.");
+	    }
+	}
+11:54:27 From Oksana Bibikova to Everyone:
+	Reacted to "public class Main {
+	..." with 🙏
+11:54:58 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    int num = 4;
+	    if (num % 2 == 0) {
+	        System.out.println("Even");
+	    } else {
+	        System.out.println("Odd");
+	    }
+	    String result = num % 2 == 0 ? "Even" : "Odd";
+	    System.out.println(result);
+	}
+12:00:03 From Starta Institute 36 to Everyone:
+	int numOne = 10;
+	String result = numOne > 0 ? numOne > 5 ? numOne < 10 ? "< 10" : ">= 10" : "< 5" : "less than 0";
+	System.out.println(result);
+12:11:47 From Starta Institute 36 to Everyone:
+	int numOne = 5;
+	String result = numOne > 0 ? (numOne > 5 ? (numOne < 10 ? "< 10" : ">= 10") : "<= 5") : "less than or equals 0";
+	System.out.println(result);
+	if (numOne > 0) {
+	    if (numOne > 5) {
+	        if (numOne < 10) {
+	            System.out.println("< 10");
+	        } else {
+	            System.out.println(">= 10");
+	        }
+	    } else {
+	        System.out.println("< 5");
+	    }
+	} else {
+	    System.out.println("less than or equals 0");
+	}
+12:13:40 From Starta Institute 36 to Everyone:
+	Создать программу, выводящую на экран случайно сгенерированное трёхзначное натуральное число и его наибольшую цифру.
+12:24:20 From Jura Buhir to Everyone:
+	Change font size
+12:34:45 From Yevhen Kariev to Everyone:
+	Replying to "Change font size"
+	
+	wo genau?
+12:35:44 From Jura Buhir to Everyone:
+	Replying to "Change font size"
+	
+	Einladungen
+12:36:05 From Jura Buhir to Everyone:
+	Replying to "Change font size"
+	
+	Und schreibst du dann
+12:36:41 From Yevhen Kariev to Everyone:
+	Replying to "Change font size"
+	
+	ja, sehe das
+12:36:53 From Jura Buhir to Everyone:
+	Replying to "Change font size"
+	
+	Toll
+12:39:04 From Jura Buhir to Everyone:
+	Reacted to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png" with 👍
+12:39:55 From Yevhen Kariev to Everyone:
+	Reacted to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png" with 🔥
+12:41:04 From Nikita Shevchenko to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	А теперь проблема, с которой я тоже столкнулся: что если будет 2 одинаковых числа?
+12:42:06 From Nikita Shevchenko to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	Ну тут повезло, что 8 в конце)
+12:42:10 From Nikita Shevchenko to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	А если 665?
+12:42:17 From Oksana Bibikova to Everyone:
+	Reacted to "Ну тут повезло, что ..." with 🙈
+12:42:53 From Jura Buhir to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	Два числа выводить, но условия такого нет)
+12:43:09 From Nikita Shevchenko to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	Так проблема в том, что ни одно число не выведется иначе)
+12:43:29 From Jura Buhir to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	В этом варианте да, в варианте где у нас присваивает одна переменная до проверки, будет все ок
+12:43:39 From Nikita Shevchenko to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	но в этот раз вывелось, только потому что последнее число в else входит, где нет никаких операторов и логически "И"
+12:44:15 From Oksana Bibikova to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	@Nikita Shevchenko The most number is 5😆
+12:44:29 From Nikita Shevchenko to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	Вот они, чудеса технологий
+12:44:48 From Yevhen Kariev to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	😆
+12:44:54 From Jura Buhir to Everyone:
+	Reacted to "Вот они, чудеса техн..." with 😂
+12:45:08 From Jura Buhir to Everyone:
+	Replying to "{85EAFCB1-B6DF-4864-B432-19B2FF5A54E5}.png"
+	
+	@Oksana Bibikova ты в роли компилятора сработала)
+12:45:53 From Oksana Bibikova to Everyone:
+	Reacted to "@Oksana Bibikova ты ..." with 🤩
+12:48:29 From Jura Buhir to Everyone:
+	Replying to "{22FDDC7D-2753-4292-8DA0-B7E228A3ACD0}.png"
+	
+	Проклятый джава
+12:48:37 From Yevhen Kariev to Everyone:
+	Reacted to "Проклятый джава" with 😆
+12:48:38 From Oksana Bibikova to Everyone:
+	Reacted to "Проклятый джава" with 😆
+12:48:51 From Nikita Shevchenko to Everyone:
+	Replying to "{22FDDC7D-2753-4292-8DA0-B7E228A3ACD0}.png"
+	
+	А это уже чародейство
+12:48:58 From Yevhen Kariev to Everyone:
+	Reacted to "А это уже чародейств..." with 😂
+12:48:58 From Jura Buhir to Everyone:
+	Replying to "{22FDDC7D-2753-4292-8DA0-B7E228A3ACD0}.png"
+	
+	@Nikita Shevchenko 😂
+12:50:53 From Artur Gabdrakipov to Everyone:
+	Спасибо!
