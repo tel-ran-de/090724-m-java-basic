@@ -1,0 +1,151 @@
+09:20:01 From Yevhen Kariev to Everyone:
+	Morgen!
+09:27:48 From Ирина Данилко to Everyone:
+	Guten Morgen!
+09:27:55 From DeyanSpasov to Everyone:
+	Guten Morgen an alle!
+09:38:32 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    for(int i = 1; i < 6; i++) {
+	        System.out.println("i = " + i);
+	    }
+	    System.out.println();
+	    for(int i = 1; i <= 5; i++) {
+	        System.out.println("i = " + i);
+	    }
+	}
+09:39:41 From Starta Institute 36 to Everyone:
+	Реализуйте метод, принимающий в параметре число.
+	Распечатайте все входящие значения числа
+	В обратном порядке - 8 7 6 … 2 1
+09:53:15 From Starta Institute 36 to Everyone:
+	String str = "Hello Java!";
+	System.out.println("Regular for");
+	for(int i = 0; i < str.length(); i++) {
+	    System.out.print(str.charAt(i));
+	}
+	System.out.println("\n\nForeach");
+	for (char ch : str.toCharArray()) {
+	    System.out.print(ch);
+	}
+	System.out.println();
+09:55:50 From Starta Institute 36 to Everyone:
+	Создайте метод, при вызове которого печатается 5 раз “Hello my friend !”
+	
+	2. Создайте метод, который принимает число и выводит в консоль только четные вхождения в это число
+	Например:
+	Вход = 5, выход = 2, 4
+09:59:13 From Starta Institute 36 to Everyone:
+	Создайте метод, при вызове которого печатается строка, которую ввел пользователь по символьно
+10:12:00 From Starta Institute 36 to Everyone:
+	for (int i = 1; i >= 1; i++) {
+	    System.out.println(i);
+	    System.out.println("Java");
+	}
+10:12:38 From Starta Institute 36 to Everyone:
+	//        2
+	        for (;;) {
+	            System.out.println("infinite loop");
+	        }
+10:13:27 From Starta Institute 36 to Everyone:
+	for (int i = 1; i >= 1; i++) {
+	    System.out.println(i);
+	    System.out.println("Java");
+	    if (i == 1000) {
+	        break;
+	    }
+	}
+10:20:17 From Starta Institute 36 to Everyone:
+	int j = 0;
+	for (;;) {
+	    System.out.println("infinite loop");
+	    if (j == 1000) {
+	        System.out.println("You entered too many fail values.");
+	        break;
+	    }
+	    j++;
+	}
+10:21:07 From Starta Institute 36 to Everyone:
+	Создайте метод, который принимает число и выводит в консоль только четные вхождения в это число
+	Например:
+	Вход = 5, выход = 2, 4
+10:30:18 From Starta Institute 36 to Everyone:
+	Необходимо вывести на экран таблицу умножения на 3
+10:36:54 From Starta Institute 36 to Everyone:
+	Напишите программу, где пользователь вводит любое целое положительное число. А программа суммирует все числа от 1 до введенного пользователем числа.
+10:45:05 From Starta Institute 36 to Everyone:
+	5! = 1 * 2 * 3 * 4 * 5 = 120
+10:49:59 From Starta Institute 36 to Everyone:
+	Числа Фибоначчи - это 1  1  2  3  5  8  13  21  34  55  89
+11:06:34 From Yevhen Kariev to Everyone:
+	//        Числа Фибоначчи - это 1  1  2  3  5  8  13  21  34  55  89		        int num = 5;	        int num1 = 1;	        int num2 = 1;	        int num3;		        System.out.print(num1 + " " + num2 + " ");		        for (int i = 3; i <= num; i++) {	            num3 = num1 + num2;	            System.out.print(num3 + " ");	            num1 = num2;	            num2 = num3;	        }	    }
+11:30:59 From Starta Institute 36 to Everyone:
+	for(int i = 2; i < 6; i++) {
+	    for (int j = 2; j < 6; j++) {
+	        System.out.print(j + " * " + i + " = " + (i * j) + "\t");
+	    }
+	    System.out.println();
+	}
+11:34:45 From Starta Institute 36 to Everyone:
+	Написать таблицу умножения
+11:34:52 From Starta Institute 36 to Everyone:
+	2 - 9
+11:41:45 From Starta Institute 36 to Everyone:
+	for (int i = 0; i < 5; i++) {
+	    for (int j = 0; j < 10; j++){
+	        System.out.print("*");
+	    }
+	    System.out.println();
+	}
+11:42:07 From Starta Institute 36 to Everyone:
+	Показать на экране прямоугольник размером MxN, состоящий из звёздочек. Затем сделать то же самое, но чтоб фигура внутри была пустая (остаётся только рамка).
+12:00:48 From Vladimir Gubarev to Everyone:
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Enter M: ");
+	int numberM = scanner.nextInt();
+	System.out.println("Enter N: ");
+	int numberN = scanner.nextInt();
+	for (int i = 0; i < numberM; i++) {
+	    for (int j = 0; j < numberN; j++) {
+	        System.out.print("*");
+	    }
+	    System.out.println();
+	}
+12:01:09 From Karina Myroshnychenko to Everyone:
+	thx)))
+12:02:25 From Mirahmad Mammadov to Everyone:
+	Reacted to "{2D509125-7567-4F93-B09E-D66626309238}.png" with 👍
+12:06:47 From Mirahmad Mammadov to Everyone:
+	Reacted to "{C85E8306-8FCA-4581-920E-E340BD5B2661}.png" with 👍
+12:13:47 From Vladimir Gubarev to Everyone:
+	System.out.println();
+	for (int i = 0; i < numberM; i++) {
+	    for (int j = 0; j < numberN; j++) {
+	        if( i==0 || i == numberM -1) {
+	            System.out.print("*");
+	        } else if(j == 0 || j == numberN-1){
+	            System.out.print("*");
+	        }
+	        else {
+	            System.out.print(" ");
+	        }
+	    }
+	    System.out.println();
+12:17:39 From Vladimir Gubarev to Everyone:
+	System.out.println();
+	for (int i = 0; i < numberM; i++) {
+	    for (int j = 0; j < numberN; j++) {
+	        if(( i==0 || i == numberM -1) || (j == 0 || j == numberN-1)){
+	            System.out.print("*");
+	        }
+	        else {
+	            System.out.print(" ");
+	        }
+	    }
+	    System.out.println();
+12:23:09 From Starta Institute 36 to Everyone:
+	Написать программу, которая выводят на экран ромб (длины диагоналей ромба одинаковы по значению, но могут быть равны любому числу). Затем сделать то же самое, но чтоб фигура внутри была пустая (остаётся только контур).
+12:47:12 From OleksiiBielykh to Everyone:
+	int dl = 10;	    int height = dl / 2;		    for (int j = 0; j <= height; j++) {	        for (int i = 0; i <= dl; i++) {	            if ((i <= height - 1 + j) && (i >= height - j)){	                System.out.print("*");	            } else {	                System.out.print(" ");	            }	        }	        System.out.println();	    }	}
+12:48:26 From Artur Gabdrakipov to Everyone:
+	Спасибо!
