@@ -1,0 +1,258 @@
+09:26:19 From Karina Myroshnychenko to Everyone:
+	Morgen))
+09:28:31 From DeyanSpasov to Everyone:
+	Morgen!
+09:29:10 From Yevhen Kariev to Everyone:
+	Morgen!
+09:29:16 From Oksana Bibikova to Everyone:
+	Reacted to "Romb.png" with 🤩
+09:29:33 From Karina Myroshnychenko to Everyone:
+	Reacted to "Romb.png" with 👍
+09:29:34 From Oksana Bibikova to Everyone:
+	Guten morgen!🌞
+09:30:12 From Vladimir Gubarev to Everyone:
+	Guten Morgen zusammen!
+09:33:53 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	        int diagonal = 10;
+	        int height = diagonal / 2;
+	//        upper
+	        for (int j = 0; j <= height; j++) {
+	            for (int i = 0; i <= diagonal; i++) {
+	                if (i <= height + j && i >= height - j) {
+	                    System.out.print("*");
+	                } else {
+	                    System.out.print(" ");
+	                }
+	            }
+	            System.out.println();
+	        }
+	//      down
+	        for (int j = height; j < diagonal; j++) {
+	            for (int i = 0; i < diagonal; i++) {
+	                if (i <= height + diagonal - j - 1 && i >= j - height + 1) {
+	                    System.out.print("*");
+	                } else {
+	                    System.out.print(" ");
+	                }
+	            }
+	            System.out.print("\n");
+	        }
+	    }
+09:40:18 From Starta Institute 36 to Everyone:
+	int i = 1;
+	while (i <= 10) {
+	    System.out.println(i);
+	    i++;
+	}
+	System.out.println();
+	int j = 10;
+	while (j > 0) {
+	    System.out.println(j);
+	    j--;
+	}
+09:51:44 From Starta Institute 36 to Everyone:
+	int i = 0;
+	while (true) {
+	    if (i > 100) {
+	        break;
+	    }
+	    System.out.println(i + "Java");
+	    i++;
+	}
+09:52:04 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	        int diagonal = 10;
+	        int height = diagonal / 2;
+	//        upper
+	        for (int j = 0; j <= height; j++) {
+	            for (int i = 0; i <= diagonal; i++) {
+	                if (i <= height + j && i >= height - j) {
+	                    System.out.print("*");
+	                } else {
+	                    System.out.print(" ");
+	                }
+	            }
+	            System.out.println();
+	        }
+	//      down
+	        for (int j = height; j < diagonal; j++) {
+	            for (int i = 0; i < diagonal; i++) {
+	                if (i <= height + diagonal - j - 1 && i >= j - height + 1) {
+	                    System.out.print("*");
+	                } else {
+	                    System.out.print(" ");
+	                }
+	            }
+	            System.out.print("\n");
+	        }
+	    }
+09:54:37 From Starta Institute 36 to Everyone:
+	Инициализируйте переменную int count = 10;
+	Создать метод, который печатает в консоле “Привет программист” count раз 
+	Используйте цикл while
+09:59:56 From Mirahmad Mammadov to Everyone:
+	int count = 10;	while(count > 0){	    System.out.println("привет программист");	    count --;	}
+10:06:35 From Starta Institute 36 to Everyone:
+	Вы реализуете игру, в которой вы показываете пользователю некоторые параметры, 
+	нажмите 1, чтобы сделать это..., 
+	нажмите 2, чтобы сделать это... и т. д., 
+	и нажмите "Q", чтобы выйти из игры.
+	Реализуйте меню выбора игрока (Elf or Orc and Exit)
+	Отобразите меню
+	1. Elf
+	2. Orc
+	3. Exit
+	Проверьте ввод на соответствие, в случае неверного ввода распечатайте "Choose any one : " и покажите меню выбора
+	Сохраните выбор
+	Распечатайте выбор в консоль
+10:39:40 From OleksiiBielykh to Everyone:
+	Replying to "{B1DA481F-B884-4878-8F27-B2686B29B705}.png"
+	
+	ты уже можешь прописать разные квесты и прокачку уровней))
+10:40:36 From Nikita Shevchenko to Everyone:
+	Replying to "{B1DA481F-B884-4878-8F27-B2686B29B705}.png"
+	
+	@OleksiiBielykh уже можно делать свою ММОРПГ
+10:41:02 From OleksiiBielykh to Everyone:
+	Replying to "{B1DA481F-B884-4878-8F27-B2686B29B705}.png"
+	
+	это уже будет дипломная работа
+10:41:23 From Nikita Shevchenko to Everyone:
+	Replying to "{B1DA481F-B884-4878-8F27-B2686B29B705}.png"
+	
+	Ну это если остаться в бэкенде
+10:42:02 From OleksiiBielykh to Everyone:
+	Reacted to "Ну это если остаться..." with 👍
+10:52:34 From Ирина Данилко to Everyone:
+	Володя скинь пожалуйста код
+10:56:28 From Vladimir Gubarev to Everyone:
+	Replying to "Володя скинь пожалуй..."
+	
+	Scanner scanner = new Scanner(System.in);
+	    String str;
+	    do {
+	        System.out.println(" Choose the number");
+	        System.out.println(" Choose 1 for Orc");
+	        System.out.println(" Choose 2 for Elf");
+	        System.out.println(" Choose 3 for Exit");
+	        str = scanner.nextLine();
+	        if(Objects.equals(str, "1")) {
+	            System.out.println("You are Orc");
+	        } else if (Objects.equals(str, "2")) {
+	            System.out.println("You are Elf");
+	        }
+	        else if (Objects.equals(str, "3")) {
+	            System.out.println("Poshel von");
+	        }
+	    } while (!Objects.equals(str, "3"));
+	    
+	}
+10:56:57 From Ирина Данилко to Everyone:
+	Replying to "Володя скинь пожалуй..."
+	
+	Thanks
+11:18:05 From OleksiiBielykh to Everyone:
+	Scanner scanner = new Scanner(System.in);	String startGame;		do {	    System.out.println("Press \"Y\" to Start game, or \"Q\" for Quit");	    startGame = scanner.nextLine();	    if (Objects.equals(startGame, "Y")){	        System.out.println("Choice your race: " + "\n" + "1. Elf" + "\t" + "\t" + "2. Orc" + "\t" + "\t" + "Q. Exit");	        startGame = scanner.nextLine(); {	            if (Objects.equals(startGame, "1")) {	                System.out.println("You are on the light side - Elf");	                break;	            } else if (Objects.equals(startGame, "2")) {	                System.out.println("You are on the dark side - Orc");	                break;	            } else if (Objects.equals(startGame, "Q")) {	                System.out.println("Good bye!");	                break;
+11:18:06 From OleksiiBielykh to Everyone:
+	}else {	                System.out.println("Try \"1\", \"2\" or \"Q\".");	                startGame = scanner.nextLine();	            }	        }	    }	}while (!Objects.equals(startGame, "Q"));
+11:35:50 From Starta Institute 36 to Everyone:
+	Загадать случайно 100 целых чисел в диапазоне от -100 до 100.
+	Вычислить процент положительных чисел, процент отрицательных чисел и процент нулей. Вычислить процент чётных чисел и процент нечётных.
+11:53:19 From Yevhen Kariev to Everyone:
+	Random random = new Random();	int count = 100;	int countEven = 0;	int countOdd = 0;	int countPositive = 0;	int countNegative = 0;	int countZero = 0;		do {	    int num = random.nextInt(-100, 101);		    if (num % 2 == 0) countEven++;	    if (num % 2 != 0) countOdd++;	    if (num == 0) countZero++;	    if (num >= 0) countPositive++;	    if (num <= 0) countNegative++;		    count--;	} while (count > 0);		System.out.println("Even: " + (countEven));	System.out.println("Odd: " + (countOdd));	System.out.println("Negative: " + (countNegative));	System.out.println("Zero: " + (countZero));	System.out.println("Positive: " + (countPositive));
+11:56:55 From Starta Institute 36 to Everyone:
+	Юрий, отлично
+11:57:11 From Jura Buhir to Everyone:
+	Reacted to "Юрий, отлично" with 👍
+12:06:22 From Starta Institute 36 to Everyone:
+	Осуществить циклический сдвиг влево введённого числа на N разрядов (например, при сдвиге числа 12345 влево на 3 разряда получится число 45123).
+12:22:34 From Starta Institute 36 to Everyone:
+	Reacted to "{862A79FD-CC13-451E-B775-E5B7B1E07A39}.png" with 👍
+12:24:25 From Jura Buhir to Everyone:
+	public class CW {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Введите число : ");
+	        String number = sc.nextLine();
+	        System.out.println("Введите количество разрядов для сдвига: ");
+	        int numb = sc.nextInt();
+	        int length = number.length();
+	        numb = numb % length;
+	        String check = number.substring(numb) + number.substring(0, numb);
+	        System.out.println("Число после сдвига  " + numb + " разрядов " + check);
+	    }
+	}
+12:29:21 From Starta Institute 36 to Everyone:
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the number...");
+	int number = sc.nextInt();
+	System.out.println("Enter how much to shift the category of number...");
+	int numberShift = sc.nextInt();
+	String tmp = "";
+	String textCycle = "";
+	int i;
+	for (int x = 0; x < numberShift - 1; x++) {
+	    i = number % 10;
+	    tmp = i + tmp;
+	    number = number / 10;
+	}
+	textCycle = tmp + number;
+	System.out.println(textCycle);
+12:32:40 From Jura Buhir to Everyone:
+	Replying to "{862A79FD-CC13-451E-B775-E5B7B1E07A39}.png"
+	
+	Пока это самое понятное решение
+12:33:11 From Jura Buhir to Everyone:
+	Reacted to "{862A79FD-CC13-451E-B775-E5B7B1E07A39}.png" with 👍
+12:43:22 From Starta Institute 36 to Everyone:
+	int diagonal = 10;
+	        int height = diagonal / 2;
+	//        upper
+	        for (int j = 0; j <= height; j++) {
+	            for (int i = 0; i <= diagonal; i++) {
+	                if (i <= height + j && i >= height - j) {
+	                    System.out.print("*");
+	                } else {
+	                    System.out.print(" ");
+	                }
+	            }
+	            System.out.println();
+	        }
+	//      down
+	        for (int j = height; j < diagonal; j++) {
+	            for (int i = 0; i < diagonal; i++) {
+	                if (i <= height + diagonal - j - 1 && i >= j - height + 1) {
+	                    System.out.print("*");
+	                } else {
+	                    System.out.print(" ");
+	                }
+	            }
+	            System.out.print("\n");
+	        }
+	        System.out.println();
+12:43:31 From Starta Institute 36 to Everyone:
+	//        up
+	        for (int j = 0; j <= height; j++) {
+	            for (int i = 0; i <= diagonal; i++) {
+	                if (i == height + j || i == height - j) {
+	                    System.out.print("*");
+	                } else {
+	                    System.out.print(" ");
+	                }
+	            }
+	            System.out.print("\n");
+	        }
+	//        down
+	        for (int j = height; j < diagonal; j++) {
+	            for (int i = 0; i < diagonal; i++) {
+	                if (i == height + diagonal - j - 1 || i == j - height + 1) {
+	                    System.out.print("*");
+	                } else {
+	                    System.out.print(" ");
+	                }
+	            }
+	            System.out.print("\n");
+	        }
+12:49:10 From Artur Gabdrakipov to Everyone:
+	Спасибо!
