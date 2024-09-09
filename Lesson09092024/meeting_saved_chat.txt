@@ -1,0 +1,154 @@
+09:17:53 From Yevhen Kariev to Everyone:
+	Morgen
+09:30:48 From Artur Gabdrakipov to Everyone:
+	Доброе утро!
+10:13:10 From Starta Institute 36 to Everyone:
+	public class Dog {
+	    private String name;
+	    private int age;
+	//    default constructor
+	    public Dog(){}
+	    public Dog(String name, int age) {
+	        this.name = name;
+	        this.age = age;
+	    }
+	    public int getAge() {
+	        return age;
+	    }
+	    public void setAge(int age) {
+	        this.age = age;
+	    }
+	    public String getName() {
+	        return name;
+	    }
+	    public void setName(String name) {
+	        this.name = name;
+	    }
+	}
+10:13:20 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	        Dog tom = new Dog("Tom", 5);
+	//        Dog dog1 = new Dog();
+	//        System.out.println("tom");
+	//        System.out.println(tom.getAge());
+	//        System.out.println(tom.getName());
+	//        System.out.println("dog1");
+	//        System.out.println(dog1.getAge());
+	//        System.out.println(dog1.getName());
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter a name:");
+	        String name = sc.nextLine();
+	        System.out.println("Enter a age:");
+	        int age = sc.nextInt();
+	        Dog dog1 = new Dog(name, age);
+	        System.out.println(dog1.getName());
+	        System.out.println(dog1.getAge());
+	//        dog.setAge(5);
+	//        dog.setName("Tom");
+	//        System.out.println(dog.getAge());
+	//        System.out.println(dog.getName());
+	    }
+10:33:02 From Starta Institute 36 to Everyone:
+	Создайте пакет main
+	Создайте класс Main и метод main
+	Создайте новый пакет taks
+	Создайте класс Test
+	Создайте переменную с модификатором public
+	Создайте внутри пакета task подпакет sub_task
+	Создайте в пакете sub_task класс SubTest
+	Создайте переменную с модификатором private
+	Создайте экземпляры классов Test и SubTest в классе Main
+	Попробуйте изменить модификаторы классов и переменных
+	Проанализируйте написанный код
+10:49:02 From Starta Institute 36 to Everyone:
+	Создайте класс Person, который будет содержать следующие поля:
+	Имя (строка)
+	Возраст (целое число)
+	Реализуйте методы:
+	Конструктор для инициализации полей.
+	Геттеры и сеттеры для каждого поля.
+	Метод introduce(), который выводит строку с информацией о человеке в формате: Меня зовут {имя}, мне {возраст} лет.
+11:36:02 From Starta Institute 36 to Everyone:
+	package inner_class;
+	public class OuterClass {
+	    private String text ;
+	    public OuterClass(String text) {
+	        this.text = text;
+	    }
+	    
+	    class InnerClass {
+	        public void printText() {
+	            System.out.println(text);
+	        }
+	    }
+	    public void callInnerClassMethod() {
+	        InnerClass innerClass = new InnerClass();
+	        innerClass.printText();
+	    }
+	}
+11:36:10 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    String str = "Some text";
+	    OuterClass outerClass = new OuterClass(str);
+	    outerClass.callInnerClassMethod();
+	}
+11:47:38 From Starta Institute 36 to Everyone:
+	public class OuterClass {
+	    public void printInfo() {
+	        class LocalClass {
+	            public void print() {
+	                System.out.println("Hello from Local class");
+	            }
+	        }
+	        LocalClass localClass = new LocalClass();
+	        localClass.print();
+	    }
+	}
+11:47:44 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    OuterClass outerClass = new OuterClass();
+	    outerClass.printInfo();
+	}
+11:59:38 From Starta Institute 36 to Everyone:
+	public interface Greeting {
+	    void sayHello();
+	}
+11:59:46 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	  Greeting greeting = new Greeting() {
+	      @Override
+	      public void sayHello() {
+	          System.out.println("Hello from anonymous class");
+	      }
+	  };
+	  greeting.sayHello();
+	}
+12:06:14 From Starta Institute 36 to Everyone:
+	public class OuterClass {
+	    static class InnerClass {
+	        public static void print() {
+	            System.out.println("Hello from StaticClass");
+	        }
+	        public void printInfo() {
+	            System.out.println("Hello from StaticClass not static method");
+	        }
+	    }
+	}
+12:06:24 From Starta Institute 36 to Everyone:
+	OuterClass.InnerClass.print();
+	OuterClass.InnerClass innerClass = new OuterClass.InnerClass();
+	innerClass.printInfo();
+12:17:03 From Starta Institute 36 to Everyone:
+	Создайте класс Zoo
+	Создайте внутренний класс Monkey
+	Внутри Monkey создайте класс Banana
+	Создайте поле String sort = “Yellow”
+	Создайте метод getSort();
+	Создайте класс Test
+	Создайте экземпляр Zoo
+	Попробуйте распечатать сорт банана.
+	Проанализируйте написанный код
+12:30:42 From Oksana Bibikova to Everyone:
+	Reacted to "{0DD1BD5E-8F1C-4F4F-95E1-4981FAEAF8C1}.png" with 🙈
+12:46:18 From Artur Gabdrakipov to Everyone:
+	Спасибо!
