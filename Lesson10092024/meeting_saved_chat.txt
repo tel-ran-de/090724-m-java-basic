@@ -1,0 +1,172 @@
+09:19:24 From Yevhen Kariev to Everyone:
+	Morgen!
+09:24:46 From DeyanSpasov to Everyone:
+	Guten Morgen an alle!
+09:35:01 From Starta Institute 36 to Everyone:
+	public class Dog extends Object {
+	    private String name;
+	    private int age;
+	    public Dog(String name, int age) {
+	        this.name = name;
+	        this.age = age;
+	    }
+	    public String getName() {
+	        return name;
+	    }
+	    public void setName(String name) {
+	        this.name = name;
+	    }
+	    public int getAge() {
+	        return age;
+	    }
+	    public void setAge(int age) {
+	        this.age = age;
+	    }
+	}
+09:50:55 From Starta Institute 36 to Everyone:
+	//        equals
+	        Dog spike = new Dog("Spike", 5);
+	        Dog dog = null;
+	        int i = 10;
+	        int j = 11;
+	        Objects.equals(spike, dog);
+	//        spike.equals(dog);
+	//        dog.equals(spike);
+	//        exception 
+	//        null.equals();
+09:51:15 From Starta Institute 36 to Everyone:
+	Создайте класс Person
+	Определите свойство класса name с модификатором private
+	Определите конструктор с параметром name
+	Переопределите toString(), таким образом, чтобы выводилось “Name is …”
+	Переопределите hashCode(), таким образом, чтобы hashCode всегда был равен 10
+	Переопределите equals(), таким образом, чтобы сравнение было только с входящим объектом
+10:28:04 From Vladimir Gubarev to Everyone:
+	public class Person {
+	    private String name;
+	    public Person(String name) {
+	        this.name = name;
+	    }
+	    @Override
+	    public String toString() {
+	        return "My name is " + name;
+	    }
+	    @Override
+	    public int hashCode() {
+	        return 10;
+	    }
+	    @Override
+	    public boolean equals(Object obj) {
+	        return Objects.equals(this,obj);
+	    }
+	}
+10:28:46 From DeyanSpasov to Everyone:
+	клас мейн тоже сбрось
+10:29:13 From Vladimir Gubarev to Everyone:
+	public class PersonAdd {
+	    public static void main(String[] args) {
+	        Person per = new Person("Vova");
+	        System.out.println(per.toString());
+	    }
+	}
+10:44:46 From Starta Institute 36 to Everyone:
+	String str = "Java";
+	//        str.toCharArray()[]
+	//        str.toCharArray()[0] = 'K';
+	//        System.out.println(str);
+	        int[] arr = new int[5];
+	        Integer[] arrInt = new Integer[5];
+	//        exception
+	//        arrInt[arrInt.length] = new Integer(10);
+	        System.out.println(arr.length);
+	        for (int i = 0; i < arr.length; i++) {
+	            arr[i] = i + 1;
+	            System.out.print(arr[i] + " ");
+	        }
+	        System.out.println();
+	//        exception
+	//        arr[arr.length] = 10;
+	//        incorrect
+	//        int arr1[] = new int[10];
+	//        literal
+	        int[] arrLiteral = {1, 2, 3, 5, 76};
+	        for (int i = 0; i < arrLiteral.length; i++) {
+	            System.out.print(arrLiteral[i] + " ");
+	        }
+10:51:47 From Oksana Bibikova to Everyone:
+	int[] arr1 = new int[5];	for (int i = 0; i < 5; i++) {	    arr1[i] = i + 1;	}	System.out.println(Arrays.toString(arr1));	System.out.println(arr1[arr1.length - 1]);	for (int i = 0; i < 5; i++) {	    arr1[i] = i * 2;	}	System.out.println(Arrays.toString(arr1));
+10:53:02 From Starta Institute 36 to Everyone:
+	Создайте массив L = 10
+	Инициализируйте массив числами от 1 до 10 используя способ литерала
+	Выведите на консоль элемент из второй ячейки
+	Выведите на консоль элемент из предпоследней ячейки
+	Распечатайте на консоль все элементы из ячеек массива
+	Используйте инструкцию .print()
+	Замените все элементы в данном массиве на значение “-1”
+	Распечатайте на консоль все элементы из ячеек массива
+	Используйте инструкцию .print()
+	Проанализируйте код
+11:04:03 From Oksana Bibikova to Everyone:
+	Replying to "{BC16A0C7-2B77-413B-87DB-A0811757E652}.png"
+	
+	Деян, ты меняешь значение только одного элемента на -1
+11:05:01 From DeyanSpasov to Everyone:
+	я не понял условие- сейчас увидел что надо всем елемента. исправил
+11:05:23 From Oksana Bibikova to Everyone:
+	Reacted to "я не понял условие- ..." with 👍
+11:14:38 From Yevhen Kariev to Starta Institute 36(direct message):
+	Artem, можно как-то с тобой лично минут пять переговорить в дискорде или ещё каким-то способом?	Мне буквально один-два вопроса по поводу дальнейшего выбора специализации...
+11:15:06 From Starta Institute 36 to Yevhen Kariev(direct message):
+	Можем после занятия остаться и обсудить
+11:25:35 From Yevhen Kariev to Starta Institute 36(direct message):
+	Reacted to "Можем после занятия ..." with 👍
+11:29:07 From DeyanSpasov to Everyone:
+	Владимир, ето очень хорошо, что ты спрашиваеш, когда не понимаеш, а не молчиш. Не стесняйся, что думаеш медленно. Все мои преподаватели говорили нам в университете, что дя физика не важно думать быстро, а думать правильно и понимать сущность проблема. Быстрота приходит с опытом- она не критерий качество.
+11:29:59 From Vladimir Gubarev to Everyone:
+	Эх, спасибо за поддержку и терпение!
+11:31:36 From DeyanSpasov to Everyone:
+	Спокойна, я когда был студентом полтара месяца пыталсья научиться решать интеграла Феймана, а через 6 месяца решал их почти не думая
+11:33:33 From Oksana Bibikova to Everyone:
+	Reacted to "Спокойна, я когда бы..." with 👍
+11:33:38 From Starta Institute 36 to Everyone:
+	Создайте класс ручка (Pen)
+	Определите свойство color типа String с доступом private
+	Создайте методы getColor(); setColor(String newColor);
+	Создайте класс Test
+	Создайте три объекта типа Pen
+	Создайте массив L = 3
+	Сохраните все объекты в массив
+	Достаньте поочередно из массива ручки и измените цвет каждой на 
+	“Green”
+	“Red” 
+	“Black”
+11:48:56 From OleksiiBielykh to Everyone:
+	public class Test {	    public static void main(String[] args) {	        Pen pen = new Pen();	        pen.setColor("red");	        Pen pen1 = new Pen();	        pen1.setColor("green");	        Pen pen2 = new Pen();	        pen2.setColor("violet");	        Pen[] penArr = {pen, pen1, pen2};	        for (int i = 0; i < penArr.length; i++){		            System.out.println(penArr[i].getColor());	        }	        penArr[0].setColor("Green");	        penArr[1].setColor("Red");	        penArr[2].setColor("Black");	        for (int i = 0; i < penArr.length; i++){		            System.out.println("new color: " + penArr[i].getColor());	        }	    }	}
+11:49:01 From OleksiiBielykh to Everyone:
+	public class Pen {	    public String getColor() {	        return color;	    }		    public void setColor(String color) {	        this.color = color;	    }		    private String color;		}
+12:03:37 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    int[] arr = {2, 5, 3, 100, 11};
+	    System.out.println(Arrays.toString(arr));
+	    int[] arrCopy = Arrays.copyOf(arr, 3);
+	    System.out.println(Arrays.toString(arrCopy));
+	    int[] arrRange = Arrays.copyOfRange(arr, 2, 6);
+	    System.out.println(Arrays.toString(arrRange));
+	    int num = arr[1];
+	    System.out.println(arr[1]);
+	    int[] arrCopyOf = Arrays.copyOf(arr, arr.length);
+	    Arrays.sort(arrCopyOf);
+	    System.out.println(Arrays.toString(arr));
+	    System.out.println(Arrays.toString(arrCopyOf));
+	}
+12:07:17 From Starta Institute 36 to Everyone:
+	Создайте массив из всех нечётных чисел от 1 до 99.
+	Выведите его на экран в строку в обратном порядке
+12:23:12 From DeyanSpasov to Everyone:
+	Никита, один цикл лишний.
+12:31:45 From Jura Buhir to Everyone:
+	Out of bound
+12:48:19 From OleksiiBielykh to Everyone:
+	int[] arrNew = new int[100];	int[] arrOdd = new int[50];	for (int i = 0; i < arrNew.length; i++) {	    arrNew[i] = i + 1;	}	System.out.println(Arrays.toString(arrNew));		for (int i = 0; i < arrNew.length; i++) {	    if (arrNew[i] % 2 != 0) {	        arrOdd[i / 2] = arrNew[i];	    }	}	System.out.println(Arrays.toString(arrOdd));		for (int i = arrOdd.length - 1; i >= 0; i--) {	    System.out.print(arrOdd[i] + " ");	}
+12:51:57 From Artur Gabdrakipov to Everyone:
+	Спасибо!
