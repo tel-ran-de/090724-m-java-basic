@@ -1,0 +1,70 @@
+10:55:17 From Oksana Bibikova to Everyone:
+	Reacted to "{4073080F-896F-4A9A-B807-BDA9871AE312}.png" with 🙏
+10:55:44 From Oksana Bibikova to Everyone:
+	Removed a 🙏 reaction from "DeyanSpasov has sent..."
+10:55:48 From Oksana Bibikova to Everyone:
+	Reacted to "{A2A51E35-8C97-469B-BCCC-EB4BD627EBD6}.png" with 🙏
+10:59:52 From Nikita Shevchenko to Everyone:
+	import java.util.Arrays;	import java.util.Random;		public class Main {	    public static void main(String[] args){	        int[][] arr = new int[5][5];	        int sum = 0;	        int firstRow = 0;	        int secondRow = 0;	        Random rand = new Random();	        for(int i = 0; i < arr.length; i++){	            for(int j = 0; j < arr[i].length; j++){	                arr[i][j] = rand.nextInt(0, 21);	                if(i == j){	                    sum += arr[i][j];	                }	//                if(i + j == arr.length-1){	//                    secondRow += arr[i][j];	//                }	                if(i == arr.length-1 - j && j == arr[i].length-1 - i){	                    secondRow += arr[i][j];	                }	            }	            System.out.println(Arrays.deepToString(arr));	            System.out.println(secondRow);	        }	    }	}
+11:25:13 From Starta Institute 36 to Everyone:
+	Получить от пользователя набор данных ( 6 целочисленных значений)
+	Сохранить полученные данные в массив
+	Получить от пользователя ключевой элемент
+	Реализовать метод линейного поиска ключевого элемента в массиве, метод должен вернуть индекс элемента или -1
+	Если элемент существует, вывести на консоль: Элемент в n-индексе, иначе Элемент не найден.
+	Проанализируйте написанный код используя режим Дебаггер
+11:45:12 From OleksiiBielykh to Everyone:
+	Scanner sc = new Scanner(System.in);	int[] numbers = new int[6];	int numKey = -1;	System.out.println("Введите 6 значений:");	for (int i = 0; i < numbers.length; i++) {	    numbers[i] = sc.nextInt();	}	System.out.println("Введи ключевое значение для поиска:");	int key = sc.nextInt();		for (int i = 0; i < numbers.length; i++) {	    if (numbers[i] == key) {	        numKey = i + 1;	        break;	    }	}	System.out.println("Найдено значение " + numKey);
+11:46:30 From Starta Institute 36 to Everyone:
+	https://proglib.io/p/6-search-algorithms-java
+11:58:33 From Starta Institute 36 to Everyone:
+	https://proglib.io/p/java-sorting-algorithms
+11:58:59 From Starta Institute 36 to Everyone:
+	public static void bubbleSort(int[] array) {  
+	    boolean sorted = false;
+	    int temp;
+	    while(!sorted) {
+	        sorted = true;
+	        for (int i = 0; i < array.length - 1; i++) {
+	            if (array[i] > array[i+1]) {
+	                temp = array[i];
+	                array[i] = array[i+1];
+	                array[i+1] = temp;
+	                sorted = false;
+	            }
+	        }
+	    }
+	}
+12:04:56 From Starta Institute 36 to Everyone:
+	Дан массив {22, 3, 4, 2, 50}
+	Реализуйте метод bubbleSort(int[] array)
+	Выведите на консоль массив до и после сортировки
+	Проанализируйте код
+12:14:48 From Jura Buhir to Everyone:
+	да
+12:16:02 From Ирина Данилко to Everyone:
+	Евгений, скиньте ваш код, плиз
+12:16:19 From Yevhen Kariev to Everyone:
+	//        Дан массив {22, 3, 4, 2, 50}	//        Реализуйте метод bubbleSort(int[] array)	//        Выведите на консоль массив до и после сортировки	//        Проанализируйте код		        int[] array = {22, 3, 4, 2, 50};			        boolean sorted = false;	        int temp;		        while (!sorted) {	            sorted = true;	            for (int i = 0; i < array.length - 1; i++) {	                if (array[i] > array[i + 1]) {	                    temp = array[i];	                    array[i] = array[i + 1];	                    array[i + 1] = temp;	                    sorted = false;	                }	            }	        }	        System.out.println(Arrays.toString(array));
+12:24:08 From Starta Institute 36 to Everyone:
+	Создайте 5 объектов типа Car
+	Объект Car должен содержать поля
+	private double price;
+	private String model;
+	и конструктор с этими полями
+	Сохраните объекты в массив
+	Распечатайте результат
+	Результат печати одного авто должен выглядеть: 
+	Car - BMW, price = 2.3
+	Применив метод “сортировка пузырьком” отсортируйте массив по стоимости
+	Распечатайте результат
+	Применив метод “сортировка пузырьком” отсортируйте массив по модели (первая буква из модели)
+	Распечатайте результат
+12:37:50 From Yevhen Kariev to Everyone:
+	private double price;	private String model;		public Car(double price, String model) {	    this.price = price;	    this.model = model;	}		public double getPrice() {	    return price;	}		public void setPrice(double price) {	    this.price = price;	}		public String getModel() {	    return model;	}		public void setModel(String model) {	    this.model = model;	}		// Car - BMW, price = 2.3	@Override	public String toString() {	    return "Car - " + model + ", price = " + price;	}
+12:38:00 From Yevhen Kariev to Everyone:
+	Car carOne = new Car(2.3, "BMW");	Car carTwo = new Car(2.2, "Opel");	Car carThree = new Car(2.1, "Tesla");	Car carFour = new Car(3.3, "Mercedes");	Car carFive = new Car(1.9, "Porsche");		Car [] array = {carOne, carTwo, carThree, carFour, carFive};		for (int i = 0; i <array.length; i++) {	    System.out.println(array[i]);	}
+12:48:17 From Yevhen Kariev to Everyone:
+	Car carOne = new Car(2.3, "BMW");	    Car carTwo = new Car(2.2, "Opel");	    Car carThree = new Car(2.1, "Tesla");	    Car carFour = new Car(3.3, "Mercedes");	    Car carFive = new Car(1.9, "Porsche");		    Car [] array = {carOne, carTwo, carThree, carFour, carFive};		    for (int i = 0; i <array.length; i++) {	        System.out.println(array[i]);	    }	    System.out.println();	    System.out.println(carFour);		    bubbleSortByPrice(array);		    System.out.println(Arrays.toString(array));	}		public static void bubbleSortByPrice(Car[] cars){	    boolean sorted = false;	    Car temp;		    while (!sorted) {	        sorted = true;	        for (int i = 0; i < cars.length - 1; i++) {	            if (cars[i].getPrice() > cars[i + 1].getPrice()) {	                temp = cars[i];	                cars[i] = cars[i + 1];	                cars[i + 1] = temp;	                sorted = false;	            }	        }	    }
+12:49:57 From Artur Gabdrakipov to Everyone:
+	Спасибо!
