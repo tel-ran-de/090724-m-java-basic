@@ -1,0 +1,188 @@
+09:27:20 From Yevhen Kariev to Everyone:
+	Morgen
+09:27:33 From DeyanSpasov to Everyone:
+	Guten Morgen an alle!
+09:28:49 From Vladimir Gubarev to Everyone:
+	Guten Morgen!
+09:33:21 From Valeriia Kravchuk to Everyone:
+	доброе утро. извиняюсь за опоздание
+09:49:23 From Starta Institute 36 to Everyone:
+	<dependencies>
+	<dependency>
+	<groupId>org.junit.jupiter</groupId>
+	<artifactId>junit-jupiter</artifactId>
+	<version>5.9.2</version>
+	<scope>test</scope>
+	</dependency>
+	</dependencies>
+10:13:35 From Starta Institute 36 to Everyone:
+	public static int[] getArray() {
+	    return new int[] {1, 2, 3};
+	}
+10:13:44 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    System.out.println(Arrays.toString(getArray()));
+	    int[] arr = getArray();
+	    System.out.println("Length of the array is 3 - " + (arr.length == 3));
+	    System.out.println("First element in array is 1 - " + (arr[0] == 1));
+	    System.out.println("The array is not empty - " + (arr.length > 0));
+	}
+10:13:50 From Starta Institute 36 to Everyone:
+	@Test
+	    void getCorrectLengthArrayTest() {
+	        int[] arr = getArray();
+	        assertEquals(3, arr.length);
+	//        assertTrue(arr.length == 3);
+	    }
+10:15:51 From Starta Institute 36 to Everyone:
+	@Test
+	    void getNotCorrectLengthArrayTest() {
+	        int[] arr = getArray();
+	        assertNotEquals(5, arr.length);
+	//        assertFalse(arr.length != 3);
+	    }
+10:27:02 From Starta Institute 36 to Everyone:
+	@Test
+	void getNotEmptyArrayTest() {
+	    int[] arr = getArray();
+	    assertNotNull(arr);
+	}
+10:28:41 From Starta Institute 36 to Everyone:
+	@Test
+	void getCorrectFirstElementFromArrayTest() {
+	    int[] arr = getArray();
+	    assertEquals(1, arr[0]);
+	}
+10:37:14 From Starta Institute 36 to Everyone:
+	private int[] arr;
+	    @BeforeEach
+	    void initArray() {
+	        arr = getArray();
+	    }
+	    @Test
+	    void getCorrectLengthArrayTest() {
+	//        int[] arr = getArray();
+	        assertEquals(3, arr.length);
+	//        assertTrue(arr.length == 3);
+	    }
+	    @Test
+	    void getNotCorrectLengthArrayTest() {
+	//        int[] arr = getArray();
+	        assertNotEquals(5, arr.length);
+	//        assertFalse(arr.length != 3);
+	    }
+	    @Test
+	    void getNotEmptyArrayTest() {
+	//        int[] arr = getArray();
+	        assertNotNull(arr);
+	    }
+	    @Test
+	    void getCorrectFirstElementFromArrayTest() {
+	//        int[] arr = getArray();
+	        assertEquals(1, arr[0]);
+	    }
+10:44:17 From Starta Institute 36 to Everyone:
+	public static int getFirstNum() {
+	        return new int[] {1, 2, 3}[0];
+	    }
+	}
+10:44:24 From Starta Institute 36 to Everyone:
+	private int[] arr;
+	private int firstNum;
+	@BeforeEach
+	void initArray() {
+	    arr = getArray();
+	    firstNum = getFirstNum();
+	}
+10:45:05 From Starta Institute 36 to Everyone:
+	@Test
+	void getCorrectFirstNum() {
+	    assertEquals(1, firstNum);
+	}
+10:51:08 From Starta Institute 36 to Everyone:
+	@Test
+	    void getCorrectArrayTest() {
+	        int[] arrNew = {1, 2, 3};
+	//        1
+	        for(int i = 0; i < arr.length; i++) {
+	            assertEquals(arrNew[i], arr[i]);
+	        }
+	//        2
+	        assertArrayEquals(arrNew, arr);
+	    }
+10:53:46 From Starta Institute 36 to Everyone:
+	@AfterEach
+	void print() {
+	    System.out.println("Test is end");
+	}
+10:57:23 From Starta Institute 36 to Everyone:
+	private int[] arr;
+	    private int firstNum;
+	    @BeforeAll
+	    static void printBeforeAll() {
+	        System.out.println("Before all tests");
+	    }
+	    @AfterAll
+	    static void printAfterAll() {
+	        System.out.println("After all tests");
+	    }
+	    @BeforeEach
+	    void initArray() {
+	        arr = getArray();
+	        firstNum = getFirstNum();
+	        System.out.println("Before each tests");
+	    }
+	    @AfterEach
+	    void print() {
+	        System.out.println("Test is end");
+	    }
+	    @Test
+	    void getCorrectLengthArrayTest() {
+	//        int[] arr = getArray();
+	        assertEquals(3, arr.length);
+	//        assertTrue(arr.length == 3);
+	    }
+	    @Test
+	    void getNotCorrectLengthArrayTest() {
+	//        int[] arr = getArray();
+	        assertNotEquals(5, arr.length);
+	//        assertFalse(arr.length != 3);
+	    }
+	    @Test
+	    void getNotEmptyArrayTest() {
+	//        int[] arr = getArray();
+	        assertNotNull(arr);
+	    }
+10:57:35 From Starta Institute 36 to Everyone:
+	@Test
+	    void getCorrectFirstElementFromArrayTest() {
+	//        int[] arr = getArray();
+	        assertEquals(1, arr[0]);
+	    }
+	    @Test
+	    void getCorrectArrayTest() {
+	        int[] arrNew = {1, 2, 3};
+	//        1
+	        for(int i = 0; i < arr.length; i++) {
+	            assertEquals(arrNew[i], arr[i]);
+	        }
+	//        2
+	        assertArrayEquals(arrNew, arr);
+	    }
+	    @Test
+	    void getCorrectFirstNum() {
+	        assertEquals(1, firstNum);
+	    }
+	}
+11:17:42 From Starta Institute 36 to Everyone:
+	Написать метод findMax(), который возвращает максимальное число из массива
+	Протестировать с помощью метода main()
+	Написать тесты используя библиотеку JUnit
+	тест, который проверяет пустой массив или нет
+	тест, который проверяет правильность поиска максимального значения
+12:08:33 From OleksiiBielykh to Everyone:
+	@Test	void getNotEmptyArray(){	    assertNotNull(maxNum);	}	@Test	void getEmptyArray(){	    assertThrows(Exception.class, () -> {	        findMax(new int[0] );	    });	}	@Test	void getCorrectResult() throws Exception {	    assertEquals(5, findMax(arrNew));	}	@Test	void getNotCorrectResult() throws Exception {	    assertNotEquals(5, findMax(arr));	}
+12:47:06 From Artur Gabdrakipov to Everyone:
+	Спасибо!
+12:48:02 From OleksiiBielykh to Everyone:
+	спасибо, до затвра👋
